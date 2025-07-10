@@ -17,7 +17,7 @@ const UserProvider = ({ children }) => {
     if(!accessToken) {
       setLoading(false);
       return;
-    }
+    } 
 
     const fetchUser = async () => {
       try {
@@ -33,6 +33,7 @@ const UserProvider = ({ children }) => {
     fetchUser(); 
   }, []);
 
+  // Updating user when signing up
   const updateUser = (userData) => {
     setUser(userData);
     localStorage.setItem("token", userData.token); // Save token

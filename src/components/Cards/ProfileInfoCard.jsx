@@ -6,7 +6,7 @@ const ProfileInfoCard = () => {
     const { user, clearUser } = useContext(UserContext);
     const navigate = useNavigate();
 
-    const handleLogout = () => {
+    const handleLogout = () => { 
         localStorage.clear();
         clearUser();
         navigate("/");
