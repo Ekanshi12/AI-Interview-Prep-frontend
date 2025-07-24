@@ -3,6 +3,7 @@ export const validateEmail = (email) => {
     return regex.test(email);
 }
 
+// Used in summary card
 export const getInitials = (title) => {
     if(!title) {
         return "";
